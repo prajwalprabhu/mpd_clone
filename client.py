@@ -204,8 +204,6 @@ class music_player():
             for file in self.file_dir:
                 self.open_folder(a=file)
         except ConnectionRefusedError:
-            # if e == ConnectionRefusedError:
-                # notify=Toplevel(self.root)
             showinfo("Not Connecting","We cannot connect to the server \n I think the server is not running")
             exit(2)
 
